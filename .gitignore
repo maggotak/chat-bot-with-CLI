@@ -3,3 +3,7 @@
 .mvn
 target/
 *.iml
+/demo-service/mvnw.cmd
+/demo-service/mvnw
+/bot-application/dependency-reduced-pom.xml
+/demo-service/.gitignore
