@@ -56,7 +56,6 @@ public class SimpleBot extends AbstractBehavior<SimpleBot.Command> {
     @Override
     public Receive<Command> createReceive() {
         return newReceiveBuilder()
-//                .onMessage(Wait.class, notUsed -> onSearch())
                 .onMessage(Message.class, this::onAnswer)
                 .onMessage(Refer.class, ref -> onStart(ref.replyTo))
                 .build();
